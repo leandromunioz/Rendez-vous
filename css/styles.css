@@ -150,6 +150,15 @@ h2{
         height: 1rem;
     }
 
+    .nav__flag-button {
+        margin-right: 0.3rem; 
+    }
+
+    .flag-tooltip {
+        bottom: auto;
+        top: 100%; 
+    }
+
     .menu__item {
         font-size: 1.2rem; 
     }
