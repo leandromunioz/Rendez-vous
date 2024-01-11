@@ -13,8 +13,8 @@ html {
 
 body {
     
-    font-family: 'Marvel', sans-serif;    
-    background-color: #FFFBC9;
+    font-family: 'Marvel', sans-serif;   
+     background-color: #FFFBC9;
     color: #000;
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ body {
 
 h2{
     font-size: 2.2rem ;
-    font-style: bold;
+    font-weight: 700;
 }
 /* Estilos del Header */
 .header {
