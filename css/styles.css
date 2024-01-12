@@ -54,8 +54,8 @@ h2{
 
 
 .nav__flag {
-    width: 1.9rem;
-    height: 1.9rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 
@@ -160,7 +160,7 @@ h2{
     }
 
     .nav__flag-button {
-        margin-right: 0.3rem; 
+        margin-right: -0.2rem; 
     }
 
     .flag-tooltip {
