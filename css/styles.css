@@ -3,7 +3,9 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; /* 1rem = 10px */
+    
 }
+
 
 *,
 *:before,
@@ -32,7 +34,7 @@ h2{
 }
 
 .header__logo img {
-    max-width: 15rem; 
+    max-width: 25rem; 
     height: auto;
 }
 
@@ -49,6 +51,13 @@ h2{
     cursor: pointer;
     position: relative;
 }
+
+
+.nav__flag {
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
 
 /* Estilos para el cuadro de texto (tooltip) */
 .flag-tooltip {
@@ -133,7 +142,7 @@ h2{
 /* Estilos Responsivos para Celulares y Tablets */
 @media screen and (max-width: 768px) {
     .header__logo img {
-        max-width: 80px;
+        max-width: 13rem;
     }
 
    
@@ -146,8 +155,8 @@ h2{
     }
 
     .nav__flag {
-        width: 1.5rem;
-        height: 1rem;
+        width: 1.9rem;
+        height: 1.9rem;
     }
 
     .nav__flag-button {
@@ -189,14 +198,14 @@ h2{
     }
 
     .nav__flag {
-        width: 1.5rem;
-        height: 1rem;
+        width: 1.9rem;
+        height: 1.9rem;
     }
 
    
 
     .footer__logo img {
-        max-width: 30px; /* Ajusta el tamaño del logo en el footer */
+        max-width: 5rem; /* Ajusta el tamaño del logo en el footer */
     }
 
     .footer__page-number {
