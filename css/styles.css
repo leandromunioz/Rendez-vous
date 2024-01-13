@@ -115,6 +115,26 @@ h2{
     margin-bottom: 1rem;
     font-size: 1.8rem; 
     line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-right: 10rem; /* Espacio para el precio */
+}
+
+.menu__item::after {
+    content: '';
+    position: absolute;
+    left: 40%;
+    bottom: 50%;
+    width: calc(60% - 10rem); /* Ajustar según el espacio del precio */
+    border-bottom: 1px dotted #000;
+}
+
+.menu__item span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1.6rem;
 }
 
 /* Estilos del Footer */
@@ -140,43 +160,18 @@ h2{
 }
 
 /* Estilos Responsivos para Celulares y Tablets */
-@media screen and (max-width: 768px) {
-    .header__logo img {
-        max-width: 13rem;
-    }
 
+
+@media (max-width: 1500px) {
+
+    .menu__item::after {
    
-}
+        left: 45%;
+        width: calc(50% - 5rem); /* Ajustar según el espacio del precio */
 
-@media screen and (max-width: 480px) {
-    .header__nav {
-        top: 0.5rem;
-        right: 0.5rem;
-    }
-
-    .nav__flag {
-        width: 1.6rem;
-        height: 1.6rem;
-    }
-
-    .nav__flag-button {
-        margin-right: -0.2rem; 
-    }
-
-    .flag-tooltip {
-        bottom: auto;
-        top: 100%; 
-    }
-
-    
-    .footer__page-number {
-        font-size: 1.2rem; 
     }
 }
 
-
-
-/* Estilos Responsivos para dispositivos pequeños */
 @media screen and (max-width: 768px) {
     .menu {
         flex-direction: column;
@@ -211,6 +206,54 @@ h2{
     .footer__page-number {
         font-size: 1.2rem; /* 12px */
     }
+
+    .header__logo img {
+        max-width: 13rem;
+    }
+
+    .menu__item::after {
+   
+        left: 65%;
+        width: calc(40% - 8rem); /* Ajustar según el espacio del precio */
+
+    }
+   
 }
+
+
+@media screen and (max-width: 480px) {
+    .header__nav {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .nav__flag {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .nav__flag-button {
+        margin-right: -0.2rem; 
+    }
+
+    .flag-tooltip {
+        bottom: auto;
+        top: 100%; 
+    }
+
+    
+    .footer__page-number {
+        font-size: 1.2rem; 
+    }
+
+    .menu__item::after {
+   
+        left: 70%;
+        width: calc(35% - 8rem); /* Ajustar según el espacio del precio */
+
+    }
+
+}
+
 
 
