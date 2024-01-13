@@ -212,7 +212,8 @@ h2{
     }
 
     .menu__item::after {
-   
+
+        bottom: 35%;
         left: 65%;
         width: calc(40% - 8rem); /* Ajustar según el espacio del precio */
 
@@ -248,10 +249,12 @@ h2{
 
     .menu__item::after {
    
+        bottom: 20%;
         left: 70%;
         width: calc(35% - 8rem); /* Ajustar según el espacio del precio */
 
     }
+
 
 }
 
